@@ -189,7 +189,8 @@ elif [[ $(uname -s) == "Linux" ]]; then
   sudo apt-get update
 
   echo "Installing global dependencies."
-  sudo wget -qO- https://docs.luxonis.com/install_dependencies.sh | bash
+  sudo wget -qO- https://github.com/USDA-ARS-GBRU/depthai-python/blob/main/docs/source/_static/install_dependencies.sh| bash
+
 
   echo -e '\nRunning Linux installer.'
 
