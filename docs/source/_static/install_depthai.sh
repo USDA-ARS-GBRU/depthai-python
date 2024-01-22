@@ -125,7 +125,7 @@ if [[ $(uname -s) == "Darwin" ]]; then
   echo "Running macOS installer."
 
   echo "Installing global dependencies."
-  bash -c "$(curl -fL https://docs.luxonis.com/install_dependencies.sh)"
+  sudo wget -qO- /home/linuxcnc/Downloads/install_dependencies.sh | bash
 
   echo "Upgrading brew."
   brew update
